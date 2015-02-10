@@ -32,9 +32,25 @@ class LessonController < ApplicationController
     render text: @message
   end
 
+  def step8
+    @price = (2000 * 1.08).floor
+  end
+
+  def step9
+    @price = 1000
+    render "step8"
+  end
+
+  def step10
+    @comment = "<script>alert('危険')</script>こんにちは。"
+  end
+
+  def step11
+    @comment = "<strong>安全なHTML</strong>"
+  end
+
   private
   def do_before
     @message = "こんにちは"
   end
-
 end
