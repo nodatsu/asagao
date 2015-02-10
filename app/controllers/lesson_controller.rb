@@ -66,6 +66,11 @@ class LessonController < ApplicationController
     @message = "ご機嫌いかが?\nRailsの勉強がんばりましょう。"
   end
 
+  def step19
+    @items = { "フライパン" => 2680, "ワイングラス" => 2550,
+		" ペッパーミル" => 4515, "ピーラー" => 945 }
+  end
+
   private
   def do_before
     @message = "こんにちは"
