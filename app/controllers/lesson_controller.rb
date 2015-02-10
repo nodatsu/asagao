@@ -49,6 +49,23 @@ class LessonController < ApplicationController
     @comment = "<strong>安全なHTML</strong>"
   end
 
+  def step12
+    @population = 704414
+    @surface = 141.31
+  end
+
+  def step13
+    @time = Time.now
+  end
+
+  def step14
+    @population = 127767944
+  end
+
+  def step15
+    @message = "ご機嫌いかが?\nRailsの勉強がんばりましょう。"
+  end
+
   private
   def do_before
     @message = "こんにちは"
