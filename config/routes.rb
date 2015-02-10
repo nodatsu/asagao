@@ -3,4 +3,6 @@ Rails.application.routes.draw do
 
   get "about" => "top#about", as: "about"
 
+  get "lesson/:action(/:name)" => "lesson"
+
 end
